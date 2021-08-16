@@ -1,5 +1,5 @@
 /**
- * @fileoverview Use this rule to allow only one thing to be exported out from a file
+ * @fileoverview Use this rule to allow only one named export from a file file
  * @author yourAverageDeveloper
  */
 "use strict";
@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/single-named-export-per-file"),
+var rule = require("../../../lib/rules/allow-single-export-per-file"),
 
     RuleTester = require("eslint").RuleTester;
 
@@ -18,7 +18,7 @@ var rule = require("../../../lib/rules/single-named-export-per-file"),
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run("single-named-export-per-file", rule, {
+ruleTester.run("allow-single-export-per-file", rule, {
 
     valid: [
 

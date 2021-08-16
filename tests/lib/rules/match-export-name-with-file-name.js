@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/exact-case-match"),
+var rule = require("../../../lib/rules/match-export-name-with-file-name"),
 
     RuleTester = require("eslint").RuleTester;
 
@@ -18,7 +18,7 @@ var rule = require("../../../lib/rules/exact-case-match"),
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run("exact-case-match", rule, {
+ruleTester.run("match-export-name-with-file-name", rule, {
 
     valid: [
 
